@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f1115;
+  color: #f1f1f1;
+}
+
+/* Header section with background image */
+.movie-header {
+  background-image: url('images/uri.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-overlay h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+/* Main content layout */
+.movie-hero {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Trailer styling only */
+.trailer-only iframe {
+  width: 100%;
+  max-width: 960px;
+  height: 420px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Movie description */
+.description {
+  margin-top: 30px;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #e2e8f0;
+  padding: 0 10px;
+}
+
+/* Buttons under trailer */
+.movie-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  background-color: #1f80e0;
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(31, 128, 224, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #3ea6ff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(31, 128, 224, 0.5);
+}
+
+.action-btn:active {
+  background-color: #155e9e;
+  transform: scale(0.96);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Back to Home button */
+.back-btn {
+  display: inline-block;
+  margin: 40px auto 0;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+.back-btn:active {
+  background-color: #1a1a1a;
+  transform: scale(0.96);
+}
